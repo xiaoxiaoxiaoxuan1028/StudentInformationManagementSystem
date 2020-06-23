@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8218B7EF-6F68-4831-8354-6B31EC2E1E5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>database_exp7</RootNamespace>
+    <AssemblyName>database_exp7</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ad_AddTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_AddTeacher.Designer.cs">
+      <DependentUpon>Ad_AddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_CourseManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_CourseManage.Designer.cs">
+      <DependentUpon>Ad_CourseManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_TeacherManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_TeacherManage.Designer.cs">
+      <DependentUpon>Ad_TeacherManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_StuManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_StuManage.Designer.cs">
+      <DependentUpon>Ad_StuManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_ChooseManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_ChooseManage.Designer.cs">
+      <DependentUpon>Ad_ChooseManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UpdateAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UpdateAd.Designer.cs">
+      <DependentUpon>Ad_UpdateAd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UpdateAd2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UpdateAd2.Designer.cs">
+      <DependentUpon>Ad_UpdateAd2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UpdateStudent.Designer.cs">
+      <DependentUpon>Ad_UpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UserManage.Designer.cs">
+      <DependentUpon>Ad_UserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePwd1.Designer.cs">
+      <DependentUpon>ChangePwd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePwd2.Designer.cs">
+      <DependentUpon>ChangePwd2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_AddCourse.Designer.cs">
+      <DependentUpon>Ad_AddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UpdateCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UpdateCourse.Designer.cs">
+      <DependentUpon>Ad_UpdateCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_AddRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_AddRecord.Designer.cs">
+      <DependentUpon>Ad_AddRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UpdateRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UpdateRecord.Designer.cs">
+      <DependentUpon>Ad_UpdateRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_AddStudent.Designer.cs">
+      <DependentUpon>Ad_AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_UpdateTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_UpdateTeacher.Designer.cs">
+      <DependentUpon>Ad_UpdateTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_AddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_AddAdmin.Designer.cs">
+      <DependentUpon>Ad_AddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_PwdReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ad_PwdReset.Designer.cs">
+      <DependentUpon>Ad_PwdReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stu_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stu_Search.Designer.cs">
+      <DependentUpon>Stu_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T_ScoreSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_ScoreSearch.Designer.cs">
+      <DependentUpon>T_ScoreSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T_StuSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_StuSearch.Designer.cs">
+      <DependentUpon>T_StuSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T_ScoreInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_ScoreInput.Designer.cs">
+      <DependentUpon>T_ScoreInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginIn_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginIn_Teacher.Designer.cs">
+      <DependentUpon>LoginIn_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginIn_Stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginIn_Stu.Designer.cs">
+      <DependentUpon>LoginIn_Stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginIn_Ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginIn_Ad.Designer.cs">
+      <DependentUpon>LoginIn_Ad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ad_AddTeacher.resx">
+      <DependentUpon>Ad_AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_CourseManage.resx">
+      <DependentUpon>Ad_CourseManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_TeacherManage.resx">
+      <DependentUpon>Ad_TeacherManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_StuManage.resx">
+      <DependentUpon>Ad_StuManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_ChooseManage.resx">
+      <DependentUpon>Ad_ChooseManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UpdateAd.resx">
+      <DependentUpon>Ad_UpdateAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UpdateAd2.resx">
+      <DependentUpon>Ad_UpdateAd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UpdateRecord.resx">
+      <DependentUpon>Ad_UpdateRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UpdateStudent.resx">
+      <DependentUpon>Ad_UpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UserManage.resx">
+      <DependentUpon>Ad_UserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePwd1.resx">
+      <DependentUpon>ChangePwd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePwd2.resx">
+      <DependentUpon>ChangePwd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_AddCourse.resx">
+      <DependentUpon>Ad_AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UpdateCourse.resx">
+      <DependentUpon>Ad_UpdateCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_AddRecord.resx">
+      <DependentUpon>Ad_AddRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_AddStudent.resx">
+      <DependentUpon>Ad_AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_UpdateTeacher.resx">
+      <DependentUpon>Ad_UpdateTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_AddAdmin.resx">
+      <DependentUpon>Ad_AddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_PwdReset.resx">
+      <DependentUpon>Ad_PwdReset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stu_Search.resx">
+      <DependentUpon>Stu_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T_ScoreSearch.resx">
+      <DependentUpon>T_ScoreSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T_StuSearch.resx">
+      <DependentUpon>T_StuSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T_ScoreInput.resx">
+      <DependentUpon>T_ScoreInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginIn_Teacher.resx">
+      <DependentUpon>LoginIn_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginIn_Ad.resx">
+      <DependentUpon>LoginIn_Ad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginIn_Stu.resx">
+      <DependentUpon>LoginIn_Stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
